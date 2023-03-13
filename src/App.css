@@ -1,0 +1,102 @@
+body{
+    background-color: #17181f;
+    color: #ddd;
+    font-size: 20px;
+}
+*{  
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 30%;
+    margin: 40px auto;
+}
+form{
+    border: 3px solid #30313D;
+    border-radius: 10px;
+    padding: 5px;
+    display:flex;
+}
+form input[type="text"] {
+    background: none;
+    color:#fff;
+    border:0;
+    padding: 10px;
+    display:block;
+    width: 100%;
+}
+
+.btn {
+    background-color: #17181f;
+    border:none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn svg{
+    height: 30px;
+    fill: #61DAFB;
+}
+
+
+div.task{
+    background-color: #30313D;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    display:flex;
+    align-items: center;
+    transition: opacity .3s linear;
+}
+div.task svg{
+    height: 30px;
+    fill: #61DAFB;
+}
+div.task.done{
+    opacity: 0.3;
+}
+div.task-name, div.task form{
+    padding: 0 10px;
+    flex-grow:1;
+}
+div.task span{
+    position:relative;
+}
+div.task span:before{
+    content:'';
+    display:block;
+    width:0;
+    height:1px;
+    background-color: #ddd;
+    position:absolute;
+    top: 50%;
+    transition: width .1s linear;
+}
+div.task.done span:before{
+    width: 100%;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+div.checkbox{
+    display:flex;
+    align-items: center;
+}
+
+button.delete, .edit {
+    background:none;
+    border:none;
+    display:flex;
+    cursor:pointer;
+}
+.delete svg, .edit svg{
+    fill: #888;
+    height: 30px;
+    padding: 0 5px;
+}
+div.task input{
+    border: 2px solid #555;
+    border-radius:5px;
+    padding: 2px 0px;
+}
