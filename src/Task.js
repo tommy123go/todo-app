@@ -38,6 +38,7 @@ export default function Task({ name, done, onToggle, onDelete, onRename }) {
             type="text"
             value={name}
             onChange={(e) => onRename(e.target.value)}
+            onBlur={(e) => onRename(e.target.value)}
           />
           <button className="edit">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
